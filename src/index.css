@@ -40,6 +40,10 @@
   border-radius: 100%;
 }
 
+.spacer{
+  /* margin: 22rem 0; */
+}
+
 @layer base {
   body {
     @apply font-secondary text-lg leading-8 text-white;
