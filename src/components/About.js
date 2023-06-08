@@ -7,6 +7,7 @@ import {useInView} from 'react-intersection-observer';
 import {motion} from 'framer-motion';
 // variant
 import {fadeIn} from '../variants';
+import { Link } from 'react-scroll';
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -30,11 +31,8 @@ const About = () => {
           viewport={{once: false, amount: 0.3}}
           className='flex-1'>
           <h2 className='h2 text-accent'>About me.</h2>
-          <h3 className='h3 mb-4'>I'm a Freelance Front-end Developer with over 5 years of experience. </h3>
-          <p className='mb-6'>Lorem ipsum dolor sit, amet consectetur adipiscing elit. 
-            Dolor natus omnis inventors quas beatae illo nulla. Officiis magni 
-            omnis
-            molestas.
+          <h3 className='h3 mb-4'>I'm a Full Stack Developer with over 3 years of experience. </h3>
+          <p className='mb-6'>Introducing my portfolio, a showcase of my skills as a full stack developer. With expertise in JavaScript, HTML/CSS, and server-side frameworks, I have crafted dynamic and visually appealing web applications.
             </p>
               {/* stats  */}
             <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
@@ -42,7 +40,7 @@ const About = () => {
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
                   {
                     inView ?
-                    <CountUp start={0} end={13} duration={3}/> : null}
+                    <CountUp start={0} end={3} duration={3}/> : null}
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>Years of <br/>
                 experience
@@ -53,7 +51,7 @@ const About = () => {
                   {
                     inView ?
                     <CountUp start={0} end={15} duration={3}/> : null}
-                    k+
+                    +
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>Project <br/>
                 Completed
@@ -63,8 +61,8 @@ const About = () => {
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
                   {
                     inView ?
-                    <CountUp start={0} end={12} duration={3}/> : null}
-                    k+
+                    <CountUp start={0} end={20} duration={3}/> : null}
+                    +
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>Satisfied<br/>
                 Clients
@@ -72,7 +70,7 @@ const About = () => {
               </div>
             </div>
             <div className='flex gap-x-8 items-center'>
-                <button className='btn btn-lg'>Contact me</button>
+            <Link to='contact' activeClass ='active' smooth={true} spy={true}><button className='btn btn-lg'>Contact me</button></Link>
                 <a href='#' className='text-gradient btn-link'>
                   My Portfolio
                 </a>

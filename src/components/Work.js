@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 // variants
 import { fadeIn } from '../variants';
 // img
-import Img1 from '../assets/portfolio-img1.png';
-import Img2 from '../assets/portfolio-img2.png';
-import Img3 from '../assets/portfolio-img3.png';
+import Img1 from '../assets/project1.png';
+import Img2 from '../assets/project2.png';
+import Img3 from '../assets/project3.png';
 const Work = () => {
   return <section className='section' id='work'>
     <div className='container mx-auto'>
@@ -21,12 +21,11 @@ const Work = () => {
           {/* text */}
           <div>
             <h2 className='h2 leading-tight text-accent'>My Latest <br />Work.</h2>
-            <p className='max-w-sm mb-16'>Lorem ipsum dolor sit amet consectetur adipiscing elit.
-              Repellat, hic! Harum quis, cum velit neque esse esoe molestas
-              doloremque explicabo!</p>
+            <p className='max-w-sm mb-16'>These Projects leverages modern technologies like ReactJS, Node.js, and MongoDB to deliver a responsive and intuitive platform. Users can expect fast loading times, efficient data handling, and an elegant UI that adapts to different devices.</p>
             <button className='btn btn-sm'>View all project</button>
           </div>
           {/* image */}
+          <a href="https://www.agelessiscool.com/">
           <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
             {/* overlay */}
             <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
@@ -34,12 +33,13 @@ const Work = () => {
             <img className='group-hover:scale-125 transition-all duration-500' src={Img1} alt='' />
             {/* pretitle */}
             <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-              <span className='text-gradient'>UI/UX Design</span></div>
+              <span className='text-gradient'>Worpdress CMS</span></div>
             {/* title */}
             <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-              <span className='text-3xl text-white'>Project Title</span>
+              <span className='text-3xl text-white'>Ageless Medical</span>
             </div>
           </div>
+          </a>
           {/* <div>image</div> */}
         </motion.div>
         <motion.div
@@ -50,6 +50,7 @@ const Work = () => {
         
         className='flex-1 flex flex-col gap-y-10'>
           {/* image */}
+          <a href="https://bubbelsclub.nl/">
           <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
             {/* overlay */}
             <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
@@ -60,10 +61,12 @@ const Work = () => {
               <span className='text-gradient'>UI/UX Design</span></div>
             {/* title */}
             <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-              <span className='text-3xl text-white'>Project Title</span>
+              <span className='text-3xl text-white'>Bubbels Club</span>
             </div>
           </div>
+          </a>
           {/* image */}
+          <a href="https://boutiquesmoke.com/">
           <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
             {/* overlay */}
             <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
@@ -71,12 +74,12 @@ const Work = () => {
             <img className='group-hover:scale-125 transition-all duration-500' src={Img3} alt='' />
             {/* pretitle */}
             <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-              <span className='text-gradient'>UI/UX Design</span></div>
+              <span className='text-gradient'>Wordpress/Three.js</span></div>
             {/* title */}
             <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-              <span className='text-3xl text-white'>Project Title</span>
+              <span className='text-3xl text-white'>Boutique Smoke</span>
             </div>
-          </div>
+          </div></a>
         </motion.div>
       </div>
     </div>

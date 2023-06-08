@@ -5,25 +5,25 @@ import { BsArrowUpRight } from 'react-icons/bs';
 import { motion } from 'framer-motion';
 // variants
 import { fadeIn } from '../variants';
+import { Link } from 'react-scroll';
 
 //  services
 const services = [
   {
     name: 'UI/UX Design',
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quia quo expedita accusamus illum ducimus',    link: 'Learn more',
+    description: 'From wireframes to high-fidelity prototypes, I meticulously craft designs that prioritize user-centered principles, ensuring accessibility, usability, and visual appeal in every interaction.',    link: 'https://www.figma.com/proto/hYCrFVPK1e3VC3d9j4jj7C/Dyor?page-id=0%3A1&node-id=1-97&starting-point-node-id=1%3A97',
   },
   {
-    name: 'Development',
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quia quo expedita accusamus illum ducimus',    link: 'Learn more',
+    name: 'Full Stack Development',
+    description: 'With a comprehensive understanding of programming languages, frameworks, and databases, I thrive in designing, developing, and deploying scalable applications that meet business requirements and exceed user expectations.',    link: 'Learn more',
   },
   {
-    name: 'Digital Marketing',
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quia quo expedita accusamus illum ducimus',    link: 'Learn more',
+    name: 'CMS',
+    description: 'With proficiency in WordPress theme development, plugin customization, and seamless integration of functionalities, I can efficiently build and maintain dynamic websites that showcase exceptional design, functionality, and user experience.',    link: 'Learn more',
   },
   {
     name: 'Product Branding',
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quia quo expedita accusamus illum ducimus',
-    link: 'Learn more',
+    description: 'From creating visually appealing logos and selecting the right color schemes to designing cohesive visual elements and typography, I ensure that every aspect of the website reflects the brand',    link: 'Learn more',
   },
 ];
 
@@ -41,8 +41,8 @@ const Services = () => {
         className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0'>
           <h2 className='h2 text-accent mb-6'>What I Do.</h2>
           <h3 className='h3 max-w-[455px] mb-16'>
-            I'm a Freelance Front-end Developer with over 5 years of experience.</h3>
-          <button className='btn btn-sm'>See my work</button>
+            I'm a Full Stack Developer with over 3 years of experience.</h3>
+            <Link to='work' activeClass ='active' smooth={true} spy={true}><button className='btn btn-sm'>See my work</button></Link>
         </motion.div>
         {/* services  */}
         <motion.div  
@@ -55,25 +55,23 @@ const Services = () => {
         className='flex-1'>
           {/* service list  */}
           <div>
-            {services.map((service, index) => {
-              // distructure service
-              const { name, description, link } = service;
-              return (
-                <div className='border-b border-white/20 h-[146px] mb-[38px] flex' key={index}>
-                  <div className='max-w-[476px]'>
-                    <h4 className='text-[20px] tracking-wider font-primary font-semibold mb-6'>{name}</h4>
-                    <p className='font-secondary leading-tight'>{description}</p>
-                  </div>
-                  <div className='flex flex-col flex-1 items-end'>
-                    <a href='#' className='btn w-9 h-9 mb-[42px] flex justify-center items-center'>
-                      <BsArrowUpRight />
-                    </a>
-                    <a href='#' className='text-gradient text-sm'>{link}</a>
-
-                  </div>
-                </div>
-              );
-            })}
+          {services.map((service, index) => {
+  const { name, description, link } = service;
+  return (
+    <div className='border-b border-white/20 h-[146px] mb-[38px] flex' key={index}>
+      <div className='max-w-[476px]'>
+        <h4 className='text-[20px] tracking-wider font-primary font-semibold mb-6'>{name}</h4>
+        <p className='font-secondary leading-tight'>{description}</p>
+      </div>
+      <div className='flex flex-col flex-1 items-end'>
+        <a href={link} className='btn w-9 h-9 mb-[42px] flex justify-center items-center'>
+          <BsArrowUpRight />
+        </a>
+        <a href={link} className='text-gradient text-sm'>Learn more</a>
+      </div>
+    </div>
+  );
+})}
           </div>
         </motion.div>
       </div>
