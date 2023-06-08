@@ -10,20 +10,20 @@ import { Link } from 'react-scroll';
 //  services
 const services = [
   {
-    name: 'UI/UX Design',
-    description: 'From wireframes to high-fidelity prototypes, I meticulously craft designs that prioritize user-centered principles, ensuring accessibility, usability, and visual appeal in every interaction.',    link: 'https://www.figma.com/proto/hYCrFVPK1e3VC3d9j4jj7C/Dyor?page-id=0%3A1&node-id=1-97&starting-point-node-id=1%3A97',
+    name: 'Front End Development',
+    description: 'Proficient in HTML5, CSS3, and JavaScript, with a strong focus on responsive design and cross-browser compatibility.Experience with modern front-end frameworks such as React.js, Angular, and Vue.js.', link: 'https://www.figma.com/proto/hYCrFVPK1e3VC3d9j4jj7C/Dyor?page-id=0%3A1&node-id=1-97&starting-point-node-id=1%3A97',
   },
   {
-    name: 'Full Stack Development',
-    description: 'With a comprehensive understanding of programming languages, frameworks, and databases, I thrive in designing, developing, and deploying scalable applications that meet business requirements and exceed user expectations.',    link: 'Learn more',
+    name: 'Back End Development',
+    description: 'Expertise in server-side programming languages like Node.js, MongoDB, MySQL allowing me to build efficient and scalable back-end systems.',    link: 'Learn more',
   },
   {
-    name: 'CMS',
-    description: 'With proficiency in WordPress theme development, plugin customization, and seamless integration of functionalities, I can efficiently build and maintain dynamic websites that showcase exceptional design, functionality, and user experience.',    link: 'Learn more',
+    name: 'DevOps and Deployment',
+    description: 'Proficient in using version control systems such as Git, ensuring code integrity and collaboration with team members.',    link: 'Learn more',
   },
   {
-    name: 'Product Branding',
-    description: 'From creating visually appealing logos and selecting the right color schemes to designing cohesive visual elements and typography, I ensure that every aspect of the website reflects the brand',    link: 'Learn more',
+    name: 'Project Management and Collaboration:',
+    description: 'Strong communication and collaboration skills, allowing me to work effectively within cross-functional teams and understand and translate business requirements into technical solutions.',    link: 'Learn more',
   },
 ];
 
@@ -41,7 +41,7 @@ const Services = () => {
         className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0'>
           <h2 className='h2 text-accent mb-6'>What I Do.</h2>
           <h3 className='h3 max-w-[455px] mb-16'>
-            I'm a Full Stack Developer with over 3 years of experience.</h3>
+            I Work on Various technologies like HTML, CSS, JAVASCRIPT, React, Vue.js, Node, Tailwind, MongoDB, WordPress. </h3>
             <Link to='work' activeClass ='active' smooth={true} spy={true}><button className='btn btn-sm'>See my work</button></Link>
         </motion.div>
         {/* services  */}
